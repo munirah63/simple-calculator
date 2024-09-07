@@ -7,12 +7,12 @@ int main()
 {
     double m, n; 
     char op;
-    //printf("\n This is a clacultor program, you enter two numbers and select an operation to get the result");
-    //printf("\nPlease enter first number: ");
+    printf("\n This is a clacultor program, you enter two numbers and select an operation to get the result");
+    printf("\nPlease enter first number: ");
     scanf("%lf", &m);
-    //printf("\nPlease enter second number: ");
+    printf("\nPlease enter second number: ");
     scanf("%lf", &n);
-    //printf("\nPlease enter the operation (+-*/): ");  
+    printf("\nPlease enter the operation (+-*/): ");  
     while ((op = getchar()) != '\n' && op != EOF) { }  
     scanf("%c", &op);
     switch(op)
@@ -29,6 +29,7 @@ int main()
         case '/':
         printf("\nThe result of the division is: %lf", div(m,n));
         break;
+        //error handling for invalid inputs
         default:
         printf("\n You entered a bad operation, please try again");
     }    
